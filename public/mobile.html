@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        gap: 8px;
+      }
+
+      .mobile {
+        width: 403px;
+        height: 3448px;
+        background: var(--prusian-blue-Darker, #000816);
+      }
+
+      .frame100 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .burger-img {
+        width: 16px;
+        height: 12px;
+        flex-shrink: 0;
+        margin-top: 10px;
+        margin-left: 10px; /* Adjusted margin-left */
+      }
+
+      .message-frame {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5px;
+        margin-left: 10px; /* Adjusted margin-left */
+        gap: 8px;
+      }
+
+      .message-icon {
+        width: 70px;
+        height: 70px;
+        border-radius: 70px;
+        border: 1px solid var(--brand-gradient-gold, #ccb04c);
+      }
+
+      .message-icon img {
+        width: 100%;
+        height: 100%;
+        border-radius: 70px;
+        object-fit: cover;
+      }
+
+      .message-icon p {
+        color: #fff;
+        width: 100px;
+        font-family: Nunito Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 5px;
+        margin-left: 0;
+      }
+
+      /* Added styles for frame91 class and sign-out-subscribe class */
+      .frame91 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;
+
+        margin-top: 50px;
+        margin-left: 0; /* Adjusted margin-left */
+      }
+
+      .top-nav-user-button {
+        display: flex;
+        width: 45px;
+        height: 18px;
+        font-size: 12px;
+        padding: 2px 6px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        border: 1px solid #ffdc5f;
+        background: linear-gradient(180deg, #fffdf0 0%, #cbd0d8 100%);
+        color: #001840;
+        text-decoration: none;
+        margin-bottom: 10px;
+      }
+
+      .username {
+        color: var(--brand-Normal, #94e8ec);
+        font-family: Nunito Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      /* Frame 108 content*/
+      .frame108 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 63px;
+      }
+
+      .frame108 img {
+        margin-top: -10px;
+        width: 98px;
+        height: 98px;
+        flex-shrink: 0;
+      }
+    </style>
+    <title>Your Title Here</title>
+  </head>
+  <body>
+    <div class="mobile">
+      <div class="frame100">
+        <img class="burger-img" src="Burger.png" alt="Burger Icon" />
+        <div class="message-frame">
+          <div class="message-icon">
+            <img src="Message Icon.png" alt="Message Icon" />
+
+            <p>
+              You are signed in as, <br />
+              <span class="username">[Name]</span>
+            </p>
+          </div>
+
+          <div class="frame91">
+            <a class="top-nav-user-button button-style" href="#">Sign Out</a>
+            <a class="top-nav-user-button button-style" href="#">Subscribe</a>
+          </div>
+          <div class="frame108">
+            <img src="ancient_mobile.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
