@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+      html,
       body {
         margin: 0;
         padding: 0;
-      }
-
-      .mobile {
-        width: 416px;
-        height: 3448px;
+        overflow-x: hidden;
+        max-width: 430px; /* Set the maximum width */
+        height: 400vh; /* Set the height of the body to the full viewport height */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         background: var(--prusian-blue-Darker, #000816);
       }
 
@@ -19,6 +22,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        margin-top: -1865px; /* Adjusted margin-top value */
       }
 
       .burger-img {
@@ -231,9 +235,11 @@
       .welcometxt {
         display: flex;
         justify-content: center;
-        margin: 0 auto;
+        align-items: center;
+        height: 100%; /* Center vertically */
         white-space: nowrap;
       }
+
       .welcometxt p {
         color: var(--brand-Normal, #94e8ec);
         text-align: center;
@@ -245,12 +251,15 @@
       }
 
       .group56 {
-        width: 300px;
+        width: 320px;
         height: 165.094px;
         flex-shrink: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         margin-top: 170px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       .group56 img {
@@ -258,6 +267,253 @@
         height: 100%;
         object-fit: cover;
       }
+
+      .frame-116 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+      }
+
+      .frame-116 img {
+        margin-top: 20px;
+      }
+
+      .frame-116 h1 {
+        width: 371px;
+        height: 20px;
+        flex-shrink: 0;
+        color: var(--golden-yellow-Normal, #d3ac2b);
+        text-align: center;
+        font-family: Playfair Display SC;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0;
+      }
+
+      .frame-116 p {
+        width: 371px;
+        flex-shrink: 0;
+        color: #fffdf0;
+        font-family: Nunito Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: left;
+        margin: 0;
+      }
+      .frame-117 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+      }
+
+      .frame-117 img {
+        margin-top: 20px;
+      }
+
+      .frame-117 h1 {
+        width: 385px;
+        height: 55px;
+        flex-shrink: 0;
+        color: var(--golden-yellow-Normal, #d3ac2b);
+        text-align: center;
+        font-family: Playfair Display SC;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        margin: 0;
+      }
+
+      .frame-117 p {
+        width: 379px;
+        flex-shrink: 0;
+        color: #fffdf0;
+        font-family: Nunito Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: left;
+        margin: 0;
+      }
+      .frame-118 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        margin-top: 100px;
+      }
+
+      .frame-118 img {
+        margin-top: -80px;
+      }
+
+      .frame-118 h1 {
+        width: 371px;
+        height: 35px;
+        flex-shrink: 0;
+        color: var(--golden-yellow-Normal, #d3ac2b);
+        text-align: center;
+        font-family: Playfair Display SC;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0;
+      }
+
+      .frame-118 p {
+        width: 371px;
+        height: 109px;
+        flex-shrink: 0;
+        color: #fffdf0;
+        font-family: Nunito Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: left;
+        margin: 0;
+      }
+      .To-do {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center text within the div */
+  margin-top: 50px; /* Adjust margin-top as needed */
+}
+
+/* Optional styling for the h1 and img inside the To-do div */
+.To-do h1 {
+  color: var(--brand-Normal, #94E8EC);
+
+/* typography/mobile-h3 */
+font-family: Playfair Display SC;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.To-do img {
+display: flex;
+width: 362px;
+height: 330px;
+padding: 10px;
+align-items: flex-start;
+gap: 10px;
+flex-shrink: 0;
+margin-top: -20px;
+}
+.To-do h2{
+  width: 212.264px;
+  color: var(--accent-light-active, #DBEAEB);
+font-family: Nunito Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: lighter;
+line-height: normal;
+text-decoration-line: underline;
+margin-top: -300px;
+text-align: center;
+}
+
+.To-do p{
+  width: 296px;
+height: 229px;
+flex-shrink: 0;
+color: var(--brand-brand-whiteyellow, #FFFDF0);
+font-family: Nunito Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-align: left;
+
+}
+
+.To-do .more-button {
+  display: flex;
+  width: 120px;
+  height: 24px;
+  font-size: 16px;
+  padding: 4px 10px;
+  margin-top: -85px;
+  margin-left: 130px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #FFFAE7, #CCB04C #333D51, #000E26 #B0B7C4 #CBD0D8;
+  background: linear-gradient(180deg,  #333D51 0%, #000E26 100%);
+  color: #FFFAE7; 
+  text-decoration: none; 
+  cursor: pointer; 
+}
+
+.To-do .more-button span {
+  flex-grow: 1; 
+  color: var(--brand-brand-lightgrey, #CBD0D8);
+font-family: Nunito Sans;
+font-style: normal;
+font-weight: 100;
+line-height: normal;
+}
+
+.To-do .more-button img {
+  width: 16px;
+  height: 16px;
+  margin-top: 0;
+  margin-left: -10px;
+  
+}
+
+.footer {
+      width: 100%;
+      height: 139px;
+      margin-top: 120px;
+      flex-shrink: 0;
+      border-top: 1px solid var(--brand-brand-goldenyellow, rgba(211, 172, 43, 0.76));
+      border-bottom: 1px solid var(--brand-brand-goldenyellow, rgba(211, 172, 43, 0.76));
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      display: flex;
+      justify-content: center; /* Center the content horizontally */
+      align-items: center; /* Center the content vertically */
+    }
+
+    .logo-container,
+    .linkedin-container,
+    .instagram-container,
+    .email-container,
+    .facebook-container {
+      margin: 0 10px; /* Adjust spacing between images */
+    }
+
+    .logo-container img,
+    .linkedin-container img,
+    .instagram-container img,
+    .email-container img,
+    .facebook-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+
+
+
+
     </style>
     <title>Your Title Here</title>
   </head>
@@ -289,6 +545,7 @@
             <img src="Down square 2.png" alt="Down Square 2" />
           </a>
         </div>
+
         <div class="welcometxt">
           <p>WELCOME TO <br />ANCIENT CIVILITATIONS</p>
         </div>
@@ -308,14 +565,96 @@
           <div class="search-icon">
             <img src="Frame 111.png" alt="Search Icon" />
           </div>
+
           <div class="group56">
+            <img src="prehistoricpanel1 1.png" alt="Prehistoric Panel 1" />
             <img src="ancientpanel1 1.png" alt="Ancient Panel 1" />
             <img src="medievalpanel1 1.png" alt="Medieval Panel 1" />
-            <img src="prehistoricpanel1 1.png" alt="Prehistoric Panel 1" />
             <img src="renpanel1 1.png" alt="Ren Panel 1" />
           </div>
+          <div class="frame-116">
+            <img src="Rectangle 79.png" alt="Reqtangle image" />
+            <h1>WHAT WE ARE</h1>
+            <p>
+              Lovers of ancient history have found a home at Ancient
+              Civilizations. This site was created with you in mind. Here you
+              will find like-minded people discussing prehistoric societies,
+              ancient cultures and medieval history. AC is about the history of
+              the world, its cultures, and its civilizations.
+            </p>
+          </div>
+          <div class="frame-117">
+            <img src="Rectangle 82.png" alt="Reqtangle image" />
+            <h1>A BREIF LOOK AT <br />ANCIENT CIVILIZATIONS</h1>
+            <p>
+              Our prehistoric ancestors left us tantalizing clues to their
+              societies with megalithic structures such as Stone Henge in
+              modern-day England, Göbekli Tepe in modern-day Turkey, and
+              Tumshukayko in modern-day Peru. The first civilizations were in
+              Mesopotamia, Egypt, and China. As human populations rose and
+              hunters and gatherers settled, other civilizations sprang up
+              around the world.
+            </p>
+          </div>
+          <div class="frame-118">
+            <img src="Rectangle 80.png" alt="Reqtangle image" />
+            <h1>OUR GOAL</h1>
+            <p>
+              Our goal at Ancient Civilizations is to provide a platform for our
+              members to share their knowledge of the civilizations most
+              important to them. We hope that by doing so, they will provide
+              information on global civilizations, their history and their
+              culture.<br /><br />
+              As such, the site will include both general and specific details
+              about the lives and places that made our ancient ancestors unique.
+            </p>
+          </div>
+        <div class="To-do">
+          <h1>THINGS TO DO</h1>
+          <img src="card-small (1).png" alt="blue card">
+          <h2>Discussions</h2>
+          <p>Join our discussion boards to connect with a vibrant community eager to share insights, experiences, and support. Don't miss out on the opportunity to expand your knowledge and engage in meaningful conversations – be part of the discussion today!</p>
+          <button class="more-button">More <img src="Iconex.png" alt=""></button>
+
+        </div>
+        <div class="To-do">
+          <img src="card-small (2).png" alt="blue card">
+          <h2>Bulletins</h2>
+          <p>Stay ahead of the curve by subscribing to our bulletins, your essential source for all the latest updates and exciting developments from our site. Sign up now and never miss out on what's new and noteworthy!</p>
+          <button class="more-button">More <img src="Iconex.png" alt=""></button>
+        </div>
+        <div class="To-do">
+          <h1>WHO WE ARE</h1>
+          <img src="card-small (1).png" alt="blue card">
+          <h2>About</h2>
+          <p>Explore the rich tapestry of Ancient Civilizations and embark on a fascinating journey through history. Discover the secrets, innovations, and enduring legacies of the world's earliest societies on our About Page – start your exploration today!</p>
+          <button class="more-button">More <img src="Iconex.png" alt=""></button>
+        </div>
+        <div class="To-do">
+          <img src="card-small (1).png" alt="blue card">
+          <h2>Admin</h2>
+          <p>Explore the rich tapestry of Ancient Civilizations and embark on a fascinating journey through history. Discover the secrets, innovations, and enduring legacies of the world's earliest societies on our About Page – start your exploration today!</p>
+          <button class="more-button">More <img src="Iconex.png" alt=""></button>
+        </div>
+       
+
+       <div class="footer">
+        
+        <div class="email-container">
+          <img src="Email.png" alt="LinkedIn">
+        </div>
+        <div class="facebook-container">
+          <img src="Facebook.png" alt="Instagram">
+        </div>
+        <div class="logo-container">
+          <img src="Logo=NoText.png" alt="Logo">
+        </div>
+        <div class="instagram-container">
+          <img src="Instagram.png" alt="Email">
+        </div>
+        <div class="linkedin-container">
+          <img src="Linkedin.png" alt="Facebook">
         </div>
       </div>
-    </div>
   </body>
 </html>
