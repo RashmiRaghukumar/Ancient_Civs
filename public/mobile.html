@@ -5,194 +5,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       html,
-      body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        max-width: 430px; /* Set the maximum width */
-        height: 400vh; /* Set the height of the body to the full viewport height */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background: var(--prusian-blue-Darker, #000816);
-      }
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  max-width: 169%;  /* Set the maximum width */
+  height: 320vh; /* Set the height of the body to the full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--prusian-blue-Darker, #000816);
+}
 
-      .frame100 {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: -1865px; /* Adjusted margin-top value */
-      }
+.section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -93.125em; /* Adjusted margin-top value */
+}
 
-      .burger-img {
-        width: 16px;
-        height: 12px;
-        flex-shrink: 0;
-        margin-top: 15px;
-        margin-left: 10px;
-      }
+.burger-img {
+  flex-shrink: 0;
+  margin-top: 0.9375em;
+  margin-left: 0.625em;
+}
 
-      .message-frame {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 5px;
-        margin-left: 10px;
-        gap: 8px;
-      }
+.message-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 0.3125em;
+  margin-left: 0.625em;
+  gap: 0.5em;
+}
 
-      .message-icon {
-        width: 70px;
-        height: 70px;
-        border-radius: 70px;
-        border: 1px solid var(--brand-gradient-gold, #ccb04c);
-      }
+.message-icon {
+  width: 4.375em;
+  height: 4.375em;
+  border-radius: 4.375em;
+  border: 0.0625em solid var(--brand-gradient-gold, #ccb04c);
+}
 
-      .message-icon img {
-        width: 100%;
-        height: 100%;
-        border-radius: 70px;
-        object-fit: cover;
-      }
 
-      .message-icon p {
-        color: #fff;
-        width: 100px;
-        font-family: Nunito Sans;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-top: 5px;
-        margin-left: 0;
-      }
+
+.message-icon img {
+width: 100%;
+height: 100%;
+border-radius: 4.375em; /* Equivalent to 70px */
+object-fit: cover;
+}
+
+.message-icon p {
+color: #fff;
+width: 6.25rem; 
+font-family: Nunito Sans;
+font-size: 0.75rem; 
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 0.3125em; 
+margin-left: 0;
+}
 
       /* Added styles for frame91 class and sign-out-subscribe class */
-      .frame91 {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 10px;
-        margin-top: 50px;
-        margin-left: 0;
-      }
+      .nav{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+gap: 0.625rem; 
+margin-top: 3.125rem; 
+margin-left: 0;
+}
 
-      .top-nav-user-button {
-        display: flex;
-        width: 45px;
-        height: 18px;
-        font-size: 12px;
-        padding: 2px 6px;
-        align-items: center;
-        gap: 10px;
-        border-radius: 8px;
-        border: 1px solid #ffdc5f;
-        background: linear-gradient(180deg, #fffdf0 0%, #cbd0d8 100%);
-        color: #001840;
-        text-decoration: none;
-        margin-bottom: 10px;
-      }
+.top-nav-user-button {
+display: flex;
+font-size: 0.75rem; 
+padding: 0.125em 0.375em; 
+align-items: center;
+gap: 0.625rem;
+border-radius: 0.5em; 
+border: 0.0625em solid #ffdc5f;
+background: linear-gradient(180deg, #fffdf0 0%, #cbd0d8 100%);
+color: #001840;
+text-decoration: none;
+margin-bottom: 0.625rem;
+}
 
-      .username {
-        color: var(--brand-Normal, #94e8ec);
-        font-family: Nunito Sans;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-      }
+
+.username {
+color: var(--brand-Normal, #94e8ec);
+font-family: Nunito Sans;
+font-size: 0.75rem; 
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
 
       /* Frame 108 content*/
-      .frame108 {
+      .icons {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 63px;
-        margin-top: -184px; /* Adjusted margin-top */
-        margin-left: 145px;
+        gap: 3.9375rem;;
+        margin-top: -11.5rem;  
+        margin-left: 9.0625rem; 
       }
 
-      .frame108 img {
+      .icons img {
         width: 98px;
         height: 98px;
         flex-shrink: 0;
-        align-self: flex-start; /* Align to the left within frame 108 */
+        align-self: flex-start; 
       }
 
-      .frame108 p {
-        width: 112px;
-        height: 98px;
-        flex-shrink: 0;
-        align-self: flex-start;
-        color: var(--golden-yellow-Normal, #d3ac2b);
-        text-align: center;
-        font-family: Nunito Sans;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-left: 5px;
-      }
+      .icons p {
+    width: 7rem; /* Converted from 112px */
+    height: 6.125rem; /* Converted from 98px */
+    flex-shrink: 0;
+    align-self: flex-start;
+    color: var(--golden-yellow-Normal, #d3ac2b);
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 0.3125em;
+}
 
-      .frame108 button {
-        display: flex;
-        padding-left: 10px;
-        justify-content: flex-end;
-        align-items: center;
-        border-radius: 8px;
-        border: 1px solid var(--brand-gradient-greyblue, #333d51);
-        background: var(--grey-blue-dark-hover, #1f2531);
-      }
-      .container {
-        display: flex;
-        position: absolute;
-        padding: 0px 0px 127.818px 4px;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 207px;
-      }
+.icons button {
+    display: flex;
+    padding-left: 0.625em; /* Converted from 10px */
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 0.5em; /* Converted from 8px */
+    border: 0.0625em solid var(--brand-gradient-greyblue, #333d51);
+    background: var(--grey-blue-dark-hover, #1f2531);
+}
 
-      .eclipse51 {
-        display: flex;
-        align-items: flex-start;
-        gap: 10px;
-      }
+.container {
+    display: flex;
+    position: absolute;
+    padding: 0 0 200px 4px; /* Replace rem values with specific pixel values */
+ 
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12.6rem; 
+}
+
+.eclipse51 {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625em; /* Converted from 10px */
+}
+
 
       .eclipse51 img {
         margin-top: -194px;
         margin-left: 195px;
       }
 
-      .frame45 {
+      .bell {
         display: flex;
         align-items: flex-start;
         gap: 10px;
       }
 
-      .frame45 img {
+      .bell  img {
         margin-top: -194px;
         margin-left: 320px;
       }
 
-      .frame451 {
+      .numbericon {
         display: flex;
         align-items: flex-start;
         gap: 10px;
       }
 
-      .frame451 img {
+      .numbericon img {
         margin-top: -190px;
         margin-left: 250px;
       }
 
-      .frame452 {
+      .numbericon2 {
         display: flex;
         align-items: flex-start;
         gap: 10px;
       }
 
-      .frame452 img {
+      .numbericon2 img {
         margin-top: -190px;
         margin-left: 375px;
       }
@@ -209,66 +212,67 @@
       }
 
       .near-eastern-button {
-        display: flex;
-        padding-left: 10px;
-        justify-content: flex-end;
-        align-items: center;
-        border-radius: 8px;
-        border: 1px solid var(--brand-gradient-greyblue, #333d51);
-        background: var(--grey-blue-dark-hover, #1f2531);
-        font-family: Nunito Sans;
-        font-size: 16px;
-        text-decoration: none;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        color: var(--brand-brand-lightgrey, #cbd0d8);
-        margin-top: -135px;
-      }
+    display: flex;
+    padding-left: 0.625em; /* Converted from 10px */
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 0.5em; /* Converted from 8px */
+    border: 0.0625em solid var(--brand-gradient-greyblue, #333d51);
+    background: var(--grey-blue-dark-hover, #1f2531);
+    font-family: Nunito Sans;
+    font-size: 1rem; /* Converted from 16px */
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--brand-brand-lightgrey, #cbd0d8);
+    margin-top: -8.4375rem; /* Converted from 135px */
+}
 
-      .near-eastern-button img {
-        width: 30px;
-        height: 30px;
-        margin-top: -2px;
-      }
+.near-eastern-button img {
+    width: 1.875em; /* Converted from 30px */
+    height: 1.875em; /* Converted from 30px */
+    margin-top: -0.125em; /* Converted from 2px */
+}
 
-      .welcometxt {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%; /* Center vertically */
-        white-space: nowrap;
-      }
+.welcometxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Center vertically */
+    white-space: nowrap;
+}
 
-      .welcometxt p {
-        color: var(--brand-Normal, #94e8ec);
-        text-align: center;
-        font-family: Playfair Display SC;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-      }
 
-      .group56 {
-        width: 320px;
-        height: 165.094px;
-        flex-shrink: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 170px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+     .welcometxt p {
+    color: var(--brand-Normal, #94e8ec);
+    text-align: center;
+    font-family: Playfair Display SC;
+    font-size: 2rem; /* Converted from 32px */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
-      .group56 img {
+.groupimages {
+    width: 20rem; /* Converted from 320px */
+    height: 10.318375rem; /* Converted from 165.094px */
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17rem; /* Converted from 170px */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+      .groupimages  img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
 
-      .frame-116 {
+      .info {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -276,11 +280,11 @@
         width: 100%;
       }
 
-      .frame-116 img {
+      .info img {
         margin-top: 20px;
       }
 
-      .frame-116 h1 {
+      .info h1 {
         width: 371px;
         height: 20px;
         flex-shrink: 0;
@@ -294,7 +298,7 @@
         margin: 0;
       }
 
-      .frame-116 p {
+      .info p {
         width: 371px;
         flex-shrink: 0;
         color: #fffdf0;
@@ -306,7 +310,7 @@
         text-align: left;
         margin: 0;
       }
-      .frame-117 {
+      .brief {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -314,38 +318,38 @@
         width: 100%;
       }
 
-      .frame-117 img {
+      .brief img {
         margin-top: 20px;
       }
 
-      .frame-117 h1 {
+      .brief h1 {
         width: 385px;
         height: 55px;
-        flex-shrink: 0;
-        color: var(--golden-yellow-Normal, #d3ac2b);
-        text-align: center;
-        font-family: Playfair Display SC;
-        font-size: 28px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+    flex-shrink: 0;
+    color: var(--golden-yellow-Normal, #d3ac2b);
+    text-align: center;
+    font-family: Playfair Display SC;
+    font-size: 1.75em; /* Converted from 28px */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
 
-        margin: 0;
-      }
+.brief p {
+  width: 379px;
+    flex-shrink: 0;
+    color: #fffdf0;
+    font-family: Nunito Sans;
+    font-size: 1rem; /* Converted from 16px */
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: left;
+    margin: 0;
+}
 
-      .frame-117 p {
-        width: 379px;
-        flex-shrink: 0;
-        color: #fffdf0;
-        font-family: Nunito Sans;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        text-align: left;
-        margin: 0;
-      }
-      .frame-118 {
+      .goal {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -354,79 +358,83 @@
         margin-top: 100px;
       }
 
-      .frame-118 img {
+      .goal img {
         margin-top: -80px;
       }
 
-      .frame-118 h1 {
+      .goal h1 {
         width: 371px;
         height: 35px;
-        flex-shrink: 0;
-        color: var(--golden-yellow-Normal, #d3ac2b);
-        text-align: center;
-        font-family: Playfair Display SC;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        margin: 0;
-      }
+    flex-shrink: 0;
+    color: var(--golden-yellow-Normal, #d3ac2b);
+    text-align: center;
+    font-family: Playfair Display SC;
+    font-size: 1.875em; /* Converted from 30px */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
 
-      .frame-118 p {
-        width: 371px;
+.goal p {
+  width: 371px;
         height: 109px;
-        flex-shrink: 0;
-        color: #fffdf0;
-        font-family: Nunito Sans;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        text-align: left;
-        margin: 0;
-      }
-      .To-do {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center; /* Center text within the div */
-  margin-top: 50px; /* Adjust margin-top as needed */
+    flex-shrink: 0;
+    color: #fffdf0;
+    font-family: Nunito Sans;
+    font-size: 1rem; /* Converted from 16px */
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: left;
+    margin: 0;
+}
+
+.To-do {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;  /* Converted from 50px */
 }
 
 /* Optional styling for the h1 and img inside the To-do div */
 .To-do h1 {
-  color: var(--brand-Normal, #94E8EC);
+    color: var(--brand-Normal, #94E8EC);
+    font-family: Playfair Display SC;
+    font-size: 2.25em; /* Converted from 36px */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
-/* typography/mobile-h3 */
-font-family: Playfair Display SC;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-}
+
+
 .To-do img {
-display: flex;
-width: 362px;
+    display: flex;
+    width: 362px;
 height: 330px;
-padding: 10px;
-align-items: flex-start;
-gap: 10px;
-flex-shrink: 0;
-margin-top: -20px;
+    padding: 0.625em; /* Converted from 10px */
+    align-items: flex-start;
+    gap: 0.625em; /* Converted from 10px */
+    flex-shrink: 0;
+    margin-top: -1.25em; /* Converted from -20px */
 }
-.To-do h2{
-  width: 212.264px;
-  color: var(--accent-light-active, #DBEAEB);
-font-family: Nunito Sans;
-font-size: 24px;
-font-style: normal;
-font-weight: lighter;
-line-height: normal;
-text-decoration-line: underline;
-margin-top: -300px;
-text-align: center;
+
+.To-do h2 {
+  width: 42.45%;
+    color: var(--accent-light-active, #DBEAEB);
+    font-family: Nunito Sans;
+    font-size: 1.5em; /* Converted from 24px */
+    font-style: normal;
+    font-weight: lighter;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-top: -12.75em; /* Converted from -300px */
+    text-align: center;
 }
+
 
 .To-do p{
   width: 296px;
@@ -443,32 +451,34 @@ text-align: left;
 }
 
 .To-do .more-button {
-  display: flex;
-  width: 120px;
-  height: 24px;
-  font-size: 16px;
-  padding: 4px 10px;
-  margin-top: -85px;
-  margin-left: 130px;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  border: 1px solid #FFFAE7, #CCB04C #333D51, #000E26 #B0B7C4 #CBD0D8;
-  background: linear-gradient(180deg,  #333D51 0%, #000E26 100%);
-  color: #FFFAE7; 
-  text-decoration: none; 
-  cursor: pointer; 
+    display: flex;
+    width: 7.5em; /* Converted from 120px */
+    height: 1.5em; /* Converted from 24px */
+    font-size: 1em; /* Converted from 16px */
+    padding: 0.25em 0.625em; /* Converted from 4px 10px */
+    margin-top: -5.3125em; /* Converted from -85px */
+    margin-left: 8.125em; /* Converted from 130px */
+    align-items: center;
+    gap: 0.625em; /* Converted from 10px */
+    flex-shrink: 0;
+    border-radius: 0.5em; /* Converted from 8px */
+    border: 0.0625em solid #FFFAE7, #CCB04C #333D51, #000E26 #B0B7C4 #CBD0D8;
+    background: linear-gradient(180deg, #333D51 0%, #000E26 100%);
+    color: #FFFAE7;
+    text-decoration: none;
+    cursor: pointer;
 }
 
+
 .To-do .more-button span {
-  flex-grow: 1; 
-  color: var(--brand-brand-lightgrey, #CBD0D8);
-font-family: Nunito Sans;
-font-style: normal;
-font-weight: 100;
-line-height: normal;
+    flex-grow: 1;
+    color: var(--brand-brand-lightgrey, #CBD0D8);
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
 }
+
 
 .To-do .more-button img {
   width: 16px;
@@ -479,35 +489,37 @@ line-height: normal;
 }
 
 .footer {
-      width: 100%;
+  width: 100%;
       height: 139px;
-      margin-top: 120px;
-      flex-shrink: 0;
-      border-top: 1px solid var(--brand-brand-goldenyellow, rgba(211, 172, 43, 0.76));
-      border-bottom: 1px solid var(--brand-brand-goldenyellow, rgba(211, 172, 43, 0.76));
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      display: flex;
-      justify-content: center; /* Center the content horizontally */
-      align-items: center; /* Center the content vertically */
-    }
+    margin-top: 7.5em; /* Converted from 120px */
+    flex-shrink: 0;
+    border-top: 0.0625em solid var(--brand-brand-goldenyellow, rgba(211, 172, 43, 0.76));
+    border-bottom: 0.0625em solid var(--brand-brand-goldenyellow, rgba(211, 172, 43, 0.76));
+    box-shadow: 0px 0.25em 0.25em 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
 
-    .logo-container,
-    .linkedin-container,
-    .instagram-container,
-    .email-container,
-    .facebook-container {
-      margin: 0 10px; /* Adjust spacing between images */
-    }
 
-    .logo-container img,
-    .linkedin-container img,
-    .instagram-container img,
-    .email-container img,
-    .facebook-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+.logo-container,
+.linkedin-container,
+.instagram-container,
+.email-container,
+.facebook-container {
+    margin: 0 0.625em; /* Adjust spacing between images */
+}
+
+.logo-container img,
+.linkedin-container img,
+.instagram-container img,
+.email-container img,
+.facebook-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 
 
@@ -519,7 +531,7 @@ line-height: normal;
   </head>
   <body>
     <div class="mobile">
-      <div class="frame100">
+      <div class="section">
         <img class="burger-img" src="Burger.png" alt="Burger Icon" />
         <div class="message-frame">
           <div class="message-icon">
@@ -531,12 +543,12 @@ line-height: normal;
             </p>
           </div>
 
-          <div class="frame91">
+          <div class="nav">
             <a class="top-nav-user-button button-style" href="#">Sign Out</a>
             <a class="top-nav-user-button button-style" href="#">Subscribe</a>
           </div>
         </div>
-        <div class="frame108">
+        <div class="icons">
           <img src="ancient_mobile.png" alt="Frame 108 Image" />
 
           <p>Explore our Civs!</p>
@@ -553,26 +565,26 @@ line-height: normal;
           <div class="eclipse51">
             <img src="Ellipse 51.png" alt="Message Image" />
           </div>
-          <div class="frame45">
+          <div class="bell">
             <img src="Frame 45.png" alt="Bell Notif" />
           </div>
-          <div class="frame451">
+          <div class="numbericon">
             <img src="5.png" alt="Number 5" />
           </div>
-          <div class="frame452">
+          <div class="numbericon2">
             <img src="5.png" alt="Number 5" />
           </div>
           <div class="search-icon">
             <img src="Frame 111.png" alt="Search Icon" />
           </div>
 
-          <div class="group56">
+          <div class="groupimages">
             <img src="prehistoricpanel1 1.png" alt="Prehistoric Panel 1" />
             <img src="ancientpanel1 1.png" alt="Ancient Panel 1" />
             <img src="medievalpanel1 1.png" alt="Medieval Panel 1" />
             <img src="renpanel1 1.png" alt="Ren Panel 1" />
           </div>
-          <div class="frame-116">
+          <div class="info">
             <img src="Rectangle 79.png" alt="Reqtangle image" />
             <h1>WHAT WE ARE</h1>
             <p>
@@ -583,7 +595,7 @@ line-height: normal;
               the world, its cultures, and its civilizations.
             </p>
           </div>
-          <div class="frame-117">
+          <div class="brief">
             <img src="Rectangle 82.png" alt="Reqtangle image" />
             <h1>A BREIF LOOK AT <br />ANCIENT CIVILIZATIONS</h1>
             <p>
@@ -596,7 +608,7 @@ line-height: normal;
               around the world.
             </p>
           </div>
-          <div class="frame-118">
+          <div class="goal">
             <img src="Rectangle 80.png" alt="Reqtangle image" />
             <h1>OUR GOAL</h1>
             <p>
