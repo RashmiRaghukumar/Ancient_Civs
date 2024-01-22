@@ -11,7 +11,7 @@
       <div class="top-bar">
         <div class="user-info">
           <div class="user-img">
-            <img src="Message Icon.png" alt="User Image" />
+            <img src="Message Icon (1).png" />
           </div>
           <div class="flex-column">
             <div class="flex-row">
@@ -26,24 +26,23 @@
             </div>
           </div>
         </div>
-        <div class="eclipse-icon">
-          <div class="frame-icon">
-            <div class="c-icon"></div>
+        <div class="center-logo">
+          <img src="Frame 51.png" alt="Center Logo" />
+
+          <div class="search-bar">
+            <input type="text" class="search-bar-box" />
+            <button class="search-btn">
+              <img src="Search.png" alt="" />
+            </button>
           </div>
-        </div>
-        <div class="search-bar">
-          <input type="text" placeholder="" class="search-bar-box" />
-          <button class="search-btn">
-            <img src="Search.png" alt="" />
-          </button>
         </div>
         <div class="notifications">
           <div class="notif">
-            <img src="messageicon.svg" alt="User Image" class="icon" />
+            <img src="message.png" alt="User Image" class="icon" />
             <p class="notif-count">7</p>
           </div>
-          <div class="notif">
-            <img src="notificon.svg" alt="User Image" class="icon" />
+          <div class="notif-bell">
+            <img src="bellicon.png" alt="User Image" class="icon" />
             <p class="notif-count">3</p>
           </div>
         </div>
@@ -63,7 +62,7 @@
           <a class="button-style">Roman</a>
         </div>
         <div class="nav-bar-crumb paddingtop1rem">
-          <div class="breadcrumb">Ancient Civs > Near Eastern</div>
+          <div class="breadcrumb">Ancient Civs</div>
         </div>
       </div>
     </div>
@@ -105,6 +104,19 @@
         border-radius: 50%;
         margin-right: 10px;
       }
+      .center-logo {
+        display: flex;
+        height: 174px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative; /* Add this line */
+      }
+
+      .center-logo img {
+        margin-top: 5px;
+        gap: 4px;
+      }
 
       .top-nav-user-button {
         margin-top: 100px;
@@ -144,23 +156,22 @@
       }
 
       .search-bar {
-        width: 300px;
+        width: 100%;
         height: 56px;
         flex-shrink: 0;
         border-radius: 20px;
         border: 1px solid var(--brand-gradient-gold, #ccb04c);
-        margin-left: -50%;
-        margin-top: 60px;
+        margin-left: -30%;
+        margin-top: 20px;
       }
 
       .search-bar input {
-        width: 442px;
+        width: 100%;
         height: 56px;
         flex-shrink: 0;
         border-radius: 20px;
         border: 1px solid var(--brand-gradient-gold, #ccb04c);
-        margin-top: 20px;
-        margin-left: -0px;
+        margin-top: 0;
       }
 
       .search-bar-box {
@@ -181,25 +192,29 @@
         cursor: pointer;
       }
 
-      .icon {
-        height: 35px;
-        width: 35px;
-        padding: 5px;
-        border: 1px orange solid;
-        border-radius: 50%;
-      }
-      .notif {
-        display: flex;
-      }
       .notifications {
         display: flex;
         align-items: center;
         margin-bottom: auto;
       }
 
+      .notif,
+      .notif-bell {
+        display: flex;
+        margin-right: 50px;
+      }
+
+      .icon {
+        height: 35px;
+        width: 35px;
+        padding: 5px;
+        border: 1px #d3ac2bc2 solid;
+        border-radius: 50%;
+      }
+
       .notif-count {
-        background-color: red;
-        color: white;
+        background: var(--prusian-blue-Darker, #000816);
+        color: #94e8ec;
         border: none;
         border-radius: 50%;
         width: 20px;
@@ -246,8 +261,8 @@
         display: flex;
         width: 100px;
         height: 35px;
-        padding: 4px 10px;
-        justify-content: space-between;
+        padding: 2px 10px;
+        justify-content: center;
         align-items: center;
         text-align: center;
         flex-shrink: 0;
@@ -255,11 +270,31 @@
         border: 1px solid #fffae7;
         color: #cbd0d8;
         background: linear-gradient(180deg, #333d51 0%, #000e26 100%);
+        margin-top: 20px;
+        gap: 16px;
       }
 
       .breadcrumb {
-        font-style: italic;
-        color: #aaa;
+        color: var(--brand-brand-whiteyellow, #fffdf0);
+        font-family: "Nunito Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      .breadcrumb::before {
+        content: "";
+      }
+
+      .breadcrumb::after {
+        content: ">";
+        color: var(--golden-yellow-Normal, #d3ac2b);
+        font-family: "Nunito Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
       }
     </style>
   </body>
