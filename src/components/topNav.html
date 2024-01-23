@@ -11,7 +11,7 @@
       <div class="top-bar">
         <div class="user-info">
           <div class="user-img">
-            <img src="Message Icon (1).png" />
+            <img src="Message Icon.png" />
           </div>
           <div class="flex-column">
             <div class="flex-row">
@@ -20,9 +20,8 @@
             </div>
 
             <div class="user-text flex-row">
-              <p>
-                You are signed in as, <br /><span class="username">[Name]</span>
-              </p>
+              <p>You are signed in as,</p>
+              <p class="flex-row username">[Name]</p>
             </div>
           </div>
         </div>
@@ -50,17 +49,18 @@
 
       <div class="nav-bar">
         <div class="nav-bar-links">
-          <a class="button-style">American</a>
-          <a class="button-style">Asian</a>
-          <a class="button-style">Celtic</a>
-          <a class="button-style">Egyptian</a>
-          <a class="button-style">Germanic</a>
-          <a class="button-style">Greek</a>
-          <a class="button-style">Near Eastern</a>
-          <a class="button-style">Oceanic</a>
-          <a class="button-style">Prehistoric</a>
-          <a class="button-style">Roman</a>
+          <a href="#" class="button-style">American</a>
+          <a href="#" class="button-style">Asian</a>
+          <a href="#" class="button-style">Celtic</a>
+          <a href="#" class="button-style">Egyptian</a>
+          <a href="#" class="button-style">Germanic</a>
+          <a href="#" class="button-style">Greek</a>
+          <a href="#" class="button-style">Near Eastern</a>
+          <a href="#" class="button-style">Oceanic</a>
+          <a href="#" class="button-style">Prehistoric</a>
+          <a href="#" class="button-style">Roman</a>
         </div>
+
         <div class="nav-bar-crumb paddingtop1rem">
           <div class="breadcrumb">Ancient Civs</div>
         </div>
@@ -103,6 +103,10 @@
         width: 90px;
         border-radius: 50%;
         margin-right: 10px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 21px;
       }
       .center-logo {
         display: flex;
@@ -121,6 +125,7 @@
       .top-nav-user-button {
         margin-top: 100px;
         border-radius: 8px;
+        padding: 0 10px;
         border: 1px solid #ffdc5f;
         background: linear-gradient(180deg, #fffdf0 0%, #cbd0d8 100%);
       }
@@ -129,6 +134,17 @@
         height: 35px;
         padding: 4px 18px;
         align-items: center;
+        margin-left: -20px;
+        gap: 10px;
+      }
+
+      .flex-row p {
+        display: flex;
+        height: 35px;
+        padding: 4px 18px;
+        align-items: center;
+        margin-top: -50px;
+        margin-left: -15px;
         gap: 10px;
       }
 
@@ -156,13 +172,17 @@
       }
 
       .search-bar {
-        width: 100%;
+        position: relative; /* Add this line */
+        width: 250%;
         height: 56px;
         flex-shrink: 0;
         border-radius: 20px;
         border: 1px solid var(--brand-gradient-gold, #ccb04c);
-        margin-left: -30%;
         margin-top: 20px;
+        margin-left: -90px;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
       }
 
       .search-bar input {
@@ -172,24 +192,31 @@
         border-radius: 20px;
         border: 1px solid var(--brand-gradient-gold, #ccb04c);
         margin-top: 0;
+        margin-left: 0;
       }
 
       .search-bar-box {
         background: #000816;
       }
+
       .search-btn {
+        position: absolute;
+        left: 0;
         background: #000816;
         color: white;
         border: none;
         border-radius: 50%;
-        width: 18px;
+        width: 100%;
         height: 17.85px;
-        margin-left: 400px;
-        margin-top: -30px;
+        margin-top: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
+      }
+
+      .search-btn img {
+        margin-left: 360px;
       }
 
       .notifications {
@@ -247,6 +274,7 @@
         flex-direction: column;
         padding: 10px 20px;
         background: #000816;
+        margin-left: 0;
       }
 
       .nav-bar-links {
@@ -254,7 +282,8 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 30px;
+        height: 50px;
+        margin-left: 0;
       }
 
       .nav-bar-links .button-style {
@@ -271,7 +300,8 @@
         color: #cbd0d8;
         background: linear-gradient(180deg, #333d51 0%, #000e26 100%);
         margin-top: 20px;
-        gap: 16px;
+        text-decoration: none;
+        cursor: pointer; /* Add cursor property here */
       }
 
       .breadcrumb {
@@ -279,8 +309,10 @@
         font-family: "Nunito Sans";
         font-size: 16px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 100;
         line-height: normal;
+        margin-top: 40px;
+        margin-left: 23px;
       }
 
       .breadcrumb::before {
@@ -295,6 +327,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        margin-left: 10px;
       }
     </style>
   </body>
