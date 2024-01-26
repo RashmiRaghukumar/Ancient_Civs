@@ -329,6 +329,277 @@
         line-height: normal;
         margin-left: 10px;
       }
+
+      @media only screen and (min-width: 430px) and (min-height: 932px) {
+        body {
+          height: 233px;
+          font-family: Arial, sans-serif;
+          background: #000816;
+          color: white;
+          margin: 0;
+        }
+
+        .top-nav {
+          width: 100%; /* Adjusted for full width */
+          height: auto; /* Adjusted for dynamic height */
+          top: 0; /* Adjusted for top position */
+          left: 0; /* Adjusted for left position */
+          border: 0; /* Removed border */
+          gap: 10px; /* Adjusted gap */
+        }
+
+        .top-bar {
+          padding: 10px; /* Adjusted padding */
+        }
+
+        .user-img {
+          margin-top: -10px;
+          transform: scale(0.6);
+          margin-left: -20px;
+          display: inline-flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 21px;
+        }
+
+        .center-logo {
+          height: auto;
+          margin-left: 0;
+        }
+
+        .center-logo img {
+          position: absolute;
+          transform: scale(1);
+          margin-top: 2px;
+          margin-left: 130px;
+          width: 100px; /* Adjusted width for full width */
+        }
+
+        .top-nav-user-button {
+          position: relative;
+          display: flex;
+          width: 35px;
+          height: 9px;
+          padding: 5px 5px;
+          align-items: center;
+          font-size: 8px;
+          margin-top: 120px;
+          margin-left: -6px;
+          left: -170px;
+          gap: 10px;
+          border-radius: 8px;
+          border: 1px solid #ffdc5f;
+          background: linear-gradient(180deg, #fffdf0 0%, #cbd0d8 100%);
+        }
+        .flex-column {
+          display: flex;
+          position: absolute;
+          margin-left: 170px;
+        }
+
+        .flex-row user {
+          margin-top: 70px;
+        }
+
+        .flex-row p {
+          font-size: 8px;
+          margin-top: -40px;
+          margin-left: -90px; /* Adjusted margin-top for smaller screens */
+        }
+
+        .user-text .flex-row {
+          margin-top: -50px; /* Adjusted margin-top */
+        }
+
+        .username {
+          font-size: 10px; /* Adjusted font size */
+        }
+
+        .search-bar {
+          position: relative;
+          width: 100px;
+          height: 50px;
+          margin-left: 90px;
+          top: 50px;
+        }
+
+        .search-bar-box {
+          background: #000816;
+        }
+
+        .search-bar input {
+          position: absolute;
+          width: 220%; /* Adjusted width for full width of the parent */
+          height: 100%; /* Adjusted height for full height of the parent */
+          border: 1px solid var(--brand-gradient-gold, #ccb04c);
+          border-radius: 20px;
+          background: #000816;
+        }
+
+        .search-btn img {
+          width: 30px;
+          margin-left: 170px;
+          margin-top: -10px;
+        }
+
+        .nav-bar {
+          padding: -15px; /* Adjusted padding */
+          margin-top: 50px;
+        }
+
+        .nav-bar-links {
+          margin-top: 20px;
+          height: auto; /* Adjusted height for dynamic height */
+          flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+          justify-content: flex-start; /* Align items to the start */
+          gap: 10px; /* Adjusted gap between items */
+        }
+
+        .nav-bar-links .button-style {
+          width: 90%; /* Adjusted width for full width */
+          height: 35px;
+          margin-top: 10px; /* Adjusted margin-top */
+        }
+
+        .breadcrumb {
+          margin-top: 20px; /* Adjusted margin-top for smaller screens */
+          margin-left: 15px; /* Adjusted margin-left for smaller screens */
+        }
+
+        .notif,
+        .notif-bell {
+          transform: scale(0.7);
+          display: flex;
+          margin-right: -20px;
+          margin-left: 20px;
+        }
+      }
+
+      @media only screen and (min-width: 1024px) and (min-height: 1366px) {
+        body {
+          height: 233px;
+          font-family: Arial, sans-serif;
+          background: #000816;
+          color: white;
+          margin: 0;
+        }
+
+        .user-img {
+          margin-top: 30px;
+          transform: scale(1.5);
+          margin-left: 30px;
+          display: inline-flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 21px;
+        }
+
+        .center-logo {
+          height: auto;
+          margin-left: 0;
+        }
+
+        .center-logo img {
+          position: absolute;
+          transform: scale(1.6);
+          margin-top: 2px;
+          margin-left: 170px;
+          width: 100px; /* Adjusted width for full width */
+        }
+
+        .top-nav-user-button {
+          position: relative;
+          display: flex;
+          width: 50px;
+          height: 9px;
+          padding: 5px 10px;
+          align-items: center;
+          font-size: 12px;
+          margin-top: 160px;
+          margin-left: -6px;
+          left: -170px;
+          gap: 10px;
+          border-radius: 8px;
+          border: 1px solid #ffdc5f;
+          background: linear-gradient(180deg, #fffdf0 0%, #cbd0d8 100%);
+        }
+        .flex-column {
+          display: flex;
+          position: absolute;
+          margin-left: 190px;
+        }
+
+        .flex-row user {
+          margin-top: 70px;
+        }
+
+        .flex-row p {
+          font-size: 8px;
+          margin-top: 30px;
+          margin-left: -90px; /* Adjusted margin-top for smaller screens */
+        }
+
+        .user-text .flex-row {
+          margin-top: -25px; /* Adjusted margin-top */
+        }
+
+        .username {
+          font-size: 10px; /* Adjusted font size */
+        }
+
+        .search-bar {
+          position: relative;
+          width: 200px;
+          height: 60px;
+          margin-left: 90px;
+          top: 80px;
+        }
+
+        .search-bar-box {
+          background: #000816;
+        }
+
+        .search-bar input {
+          position: absolute;
+          width: 220%; /* Adjusted width for full width of the parent */
+          height: 100%; /* Adjusted height for full height of the parent */
+          border: 1px solid var(--brand-gradient-gold, #ccb04c);
+          border-radius: 20px;
+          background: #000816;
+        }
+
+        .search-btn img {
+          width: 20px;
+          margin-left: 360px;
+          margin-top: -10px;
+        }
+        .nav-bar {
+          padding: -15px; /* Adjusted padding */
+          margin-top: 50px;
+        }
+
+        .nav-bar-links {
+          margin-top: 20px;
+          height: auto;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          gap: 10px;
+        }
+
+        .nav-bar-links .button-style {
+          width: 6%; /* Adjusted width for full width */
+          height: 35px;
+          margin-top: 10px; /* Adjusted margin-top */
+        }
+
+        .notif,
+        .notif-bell {
+          transform: scale(1);
+          display: flex;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+      }
     </style>
   </body>
 </html>
